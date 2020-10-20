@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></script>
+        <script>
+            /*
+            Mostrar y ocultar párrafos
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    $("p*").toggle();
+                });
+            });
+            */
+            /*
+            Ocultar botón
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    $("#boton*").hide();
+                });
+                
+            });
+            */
+            /*
+            Ocultar clase
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    $("p.intro*").toggle();
+                });
+                
+            });
+            */
+            /*
+            Seleccionar párrafo con otro selector
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    $("p:first-of-type").toggle();
+                });
+            });
+            */
+        </script>
+    </head>
+    <body>
+        <header class="intro">Prueba</header>
+        <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto similique, omnis animi dolore eius iure repudiandae ea. Repudiandae labore eos reiciendis voluptatibus at expedita totam, corrupti, praesentium, ipsa officia perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nisi? Vero cumque nam iste fuga adipisci cupiditate consectetur, eaque quasi accusamus optio ut nemo esse temporibus nulla doloribus sint facilis.</p>
+        <button id="boton">Botón</button>
+    </body>
+</html>

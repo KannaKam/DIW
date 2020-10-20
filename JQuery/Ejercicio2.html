@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </script>
+    <script>
+        /*
+        Ocultar y mostrar el tercer elemento de la primera lista
+        $(document).ready(function(){
+            $("#boton").click(function(){
+                 $("ul li:eq(2)").toggle();
+            });
+        });
+        */
+        $(document).ready(function(){
+            $("#boton").click(function(){
+                 $("ul > li:eq(2)").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul>
+        Lista 1
+        <li>Tortilla wena</li>
+        <li>Jamón vegano weno por que sí</li>
+        <li>Quesito viejo de oveja madurado en cava</li>
+    </ul>
+    <ul>
+        Lista 2
+        <li>Coca-Colita zero</li>
+        <li>Leche para los terroristas :(</li>
+        <li>Té de limón del mercadona</li>
+    </ul>
+    <button id="boton">Botón</button>
+</body>
+
+</html>
