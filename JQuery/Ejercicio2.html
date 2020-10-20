@@ -15,13 +15,14 @@
         */
         $(document).ready(function(){
             $("#boton").click(function(){
-                 $("ul > li:eq(2)").toggle();
+                 $("ul li:eq(2)").toggle();
             });
         });
     </script>
 </head>
 
 <body>
+    <div>
     <ul>
         Lista 1
         <li>Tortilla wena</li>
@@ -34,6 +35,7 @@
         <li>Leche para los terroristas :(</li>
         <li>Té de limón del mercadona</li>
     </ul>
+</div>
     <button id="boton">Botón</button>
 </body>
 
