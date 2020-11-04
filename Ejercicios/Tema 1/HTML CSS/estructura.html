@@ -14,15 +14,100 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="Chuleta.html"><img src="back.png"></a>
+        </nav>
     <div class="container">
         <h1>Estructuras</h1>
         <p>La primera línea &lt;!DOCTYPE ... > no es propiamente una etiqueta de HTML, sino una declaración o
             instrucción
             al navegador sobre la versión de HTML que utiliza la página. Para la versión HTML 5, el tipo de documento es
-            html: &lt;!DOCTYPE html></p>
+            html: &lt;!DOCTYPE html>
+        </p>
         <p>El resto del documento HTML está contenido dentro de la etiqueta &lt;html>&lt;/html>. Para indicar el idioma
             es conveniente añadir
-            el atributo lang="es": &lt;html lang="es">&lt;/html></p>
+            el atributo lang="es": &lt;html lang="es">&lt;/html>
+        </p>
+        <p>Al hablar de la estructura de una página web &lt;html> podemos distinguir dos partes principales, la cabecera
+            &lt;head> y el cuerpo &lt;body>.
+            La cabecera contiene información importante para la propia página pero que el usuario no ve directamente
+            (salvo el título), y en
+            el cuerpo está el contenido visible de la página.
+        </p>
+        <p>
+            En la cabecera tenemos etiquetas para definir los metadatos &lt;meta> como el juego de caracteres (charset)
+            y el viewport,
+            a continuación el título &lt;title> y enlaces a archivos de hojas de estilo &lt;link> y Javascript
+            &lt;script>.
+            Algunas de estas etiquetas son obligatorias y otras opcionales, pero con reglas en cuanto a donde deben
+            colocarse.
+        </p>
+        <p>
+            Dentro del cuerpo &lt;body> tenemos todo el contenido de la página web, por lo tanto podemos incluir en él
+            prácticamente todas las etiquetas de HTML,
+            sin ninguna regla en cuanto al orden de las etiquetas, sin embargo, es conveniente dar una estructura lógica
+            a la página mediante el uso adecuado
+            de las etiquetas semánticas. Este tipo de etiquetas permiten definir cabeceras &lt;header>, cuerpo principal
+            &lt;main>, secciones &lt;section>, artículos
+            &lt;article>, contenido adicional &lt;aside> y pies &lt;footer>. Dentro de cada una de estas partes podemos
+            colocar las etiquetas que incorporan el contenido,
+            párrafos &lt;p>, cabeceras (h1,h2,...), listas, tablas, imágenes, vídeos, ... Si necesitamos hacer algún
+            tipo de agrupación de etiquetas que no está
+            contemplado por las etiquetas semánticas disponemos de la etiqueta &lt;div> que crea un contenedor sin
+            significado semántico.
+        </p>
+        <div class="card-columns">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejemplo de estructura HTML</h5>
+                    <p>
+                        &lt;!DOCTYPE html>
+                        <br>
+                        &lt;html lang="en">
+                        <br>
+                        &lt;head>
+                        <br>
+                        &lt;meta charset="UTF-8">
+                        <br>
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <br>
+                        &lt;link rel="stylesheet"
+                        <br>
+                        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+                        <br>
+                        &lt;style>
+                        <br>
+                         h1 {
+                            <br>
+                        text-align: center;
+                        <br>
+                        }
+                        <br>
+                        &lt;/style>
+                        <br>
+                        &lt;title>¿Qué es HTML?&lt;/title>
+                        <br>
+                        &lt;/head>
+                        <br>
+                        &lt;body>
+                        <br>
+                        &lt;div class="container">
+                        <br>
+                        &lt;h1>¿Qué es HTML?&lt;/h1>
+                        <br>
+                        &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit deleniti aliquam
+                        mollitia veniam alias nostrum ex dignissimos
+                        accusantium quasi vitae, fugit rerum est optio harum voluptate ut sint earum.&lt;/p>
+                        <br>
+                        &lt;/div>
+                        <br>
+                        &lt;/body>
+                        <br>
+                        &lt;/html>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

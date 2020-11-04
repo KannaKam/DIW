@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <title>Etiquetas meta básicas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="Chuleta.html"><img src="back.png"></a>
+        </nav>
+    <div class="container">
+        <h1>Etiquetas meta</h1>
+        <p>La etiqueta meta sirve para aportar información adicional al navegador a la hora de procesar la página, es lo
+            que
+            se conoce como metadatos.
+            Esta etiqueta no tiene etiqueta de cierre, se cierra con />. La forma de la etiqueta es
+            &lt;meta contenido="valor" />,
+            donde contenido y valor pueden ser cualquier texto, en principio no hay restricciones estrictas al respecto,
+            podemos crear una pareja
+            contenido/valor según nuestras necesidades, por ejemplo, al crear un servicio web.</p>
+
+        <p>Los metadatos no se muestran al usuario pero son analizados por el navegador, los buscadores o servicios web.
+        </p>
+
+        <p>Algunos de los datos más frecuentes que se suelen especificar son los siguientes:</p>
+
+        <p>- &lt;meta charset="utf-8">, indica el juego de caracteres empleado por la página, se recomienda usar utf-8,
+            anteriormente se usaba ISO-8859-1, para los idiomas occidentales.</p>
+
+        <p>-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">, especifica las características
+            del
+            tamaño de
+            la pantalla para
+            ajustar mejor las paginas con diseño adaptable, sobre todo para dispositivos móviles.</p>
+
+        <p>-&lt;meta name="author" content="aulaClic">, indica el autor de la página web.</p>
+
+        <p>-&lt;meta name="description" content="aulaClic. Cursos de informática gratis" />, indica la descripción del
+            contenido de
+            la página web.</p>
+
+        <p>- &lt;meta name="keywords" content="curso base datos ofimática diseño" />, es una lista de palabras claves
+            relacionadas
+            con el contenido de
+            la página web. Esta información, junto con las dos anteriores es utilizada fundamentalmente por los
+            buscadores.
+        </p>
+
+        <p>-&lt;meta name="generator" content="Joomla" />, indica el programa que ha generado la página, la utilizan los
+            generadores de contenido como WordPress, Joomla, etc.</p>
+
+        <p>-&lt;meta name="robots" content="index, follow" />, da información para los buscadores acerca del uso de
+            programas robot
+            que indexan las páginas web.</p>
+
+        <p>-&lt;meta http-equiv="refresh" content="50">, con http-equiv se proporciona información que va a ser tratada
+            como
+            cabecera por la página web,
+            por ejemplo, para indicar que la página web debe ser cargada de nuevo (refresh) cada 50 segundos, por
+            ejemplo
+            para
+            una página con datos de la
+            bolsa que debe ser actualizada frecuentemente.</p>
+
+        <p>-&lt;meta http-equiv="refresh" content="10;URL='http://nuevodominio.com/'" />, indica que al cabo de x sg, se
+            redireccione a la
+            página indicada. Es útil si hemos cambiado la dirección de la página y queremos redirigir al usuario a otra
+            página de
+            forma automática al cabo de unos segundos, para que pueda leer un mensaje de aviso. Si no queremos que lea
+            nada
+            y la redirección
+            sea inmediata, escribiremos un cero en los segundos.</p>
+    </div>
+</body>
+
+</html>
