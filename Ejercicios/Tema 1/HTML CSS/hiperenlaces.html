@@ -18,22 +18,35 @@
         <a href="Chuleta.html"><img src="back.png"></a>
     </nav>
     <div class="container">
-        <h1>Texto</h1>
-        <p>Como estamos diciendo todo el texto de la página estará dentro del &lt;body>, el texto dentro del &lt;body> debe
-        estar, principalmente, dentro de párrafos.
-        En HTML, los párrafos se identifican con la etiqueta &lt;p>&lt;/p>. Dentro de los párrafos colocaremos texto e
-        imágenes, y algunas etiquetas que nos permitan dar formato al texto. Dentro de un párrafo no debe haber otros
-        párrafos anidados.
+        <h1>Hiperenlaces</h1>
+        <p>
+            Los enlaces o hiperenlaces (también llamados hipervínculos) permiten abrir tanto abrir otra página web (esté o no en nuestro servidor), así saltar a otro punto de la misma página.
+            Algunos de sus atributos que usaremos a continuación son:
         </p>
-
-        <p>A su vez, dentro del &lt;body>, disponemos de encabezados que nos permiten organizar los títulos o rótulos del
-        texto. Los encabezados van desde
-        el &lt;h1>&lt;/h1> de mayor tamaño, al &lt;h6>&lt;/h6>, el más pequeño. Por ejemplo, utilizaríamos un &lt;h1>
-        para poner el rótulo principal de la página, &lt;h2>
-        para los títulos de los apartados, &lt;h3> para los apartados de segundo nivel, etc. El propio texto de cada
-        apartado iría fuera del encabezado
-        contenido en párrafos &lt;p>&lt;/p> u otras etiquetas.
-        </p>
+        &lt;a
+        <br>
+        <strong>href</strong>: especifica la URL que debe cargarse al hacer clic en el enlace, pudiendo ser también una dirección
+        de correo electrónico o la ruta y/o nombre de un archivo existente. En caso de poner una almohadilla '#'
+        no realizará acción alguna. También se puede escificar el nombre de un &lt;frame> o &lt;iframe>.
+        <br><br>
+        <strong>name</strong>: da un nombre al enlace. Este atributo puede ser utilizado para crear enlaces internos dentro de la
+        misma página web.
+        <br><br>
+        <strong>target</strong>: indica dónde se debe cargar la página, pudiendo tomar principalmente como valores: _blank (en
+        una pestaña o ventana nueva), _parent (en el frame o marco que contiene al actual), _self (en el frame
+        actual) o _top (en la ventana principal del navegador web)
+        <br>>
+    <br>
+    &lt;/a>
+    <br><br>
+    <p>Los hiperenlaces puede ser:</p>
+    <p><strong>Internos</strong>: cargamos otra página de nuestro sitio web. Por ejemplo:
+    <br>
+    &lt;a href="./otraPagina.html">Ir a otra página&lt;/a>
+    <p><strong>Externos</strong>: cargamos una página de internet. Por ejemplo:
+        <br>
+        &lt;a href="reddit.com">Ir a reddit&lt;/a>
+    </p>
     </div>
 </body>
 
