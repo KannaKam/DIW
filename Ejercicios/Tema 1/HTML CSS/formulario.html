@@ -25,8 +25,28 @@
         <p>
             Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.
             <br>
+            <br>
             Para el correcto funcionamiento del formulario, será necesario introducir
             controladores.
+            <br>
+            <br>
+            Los etiquetas que crean los controles en los formularios son <strong>&lt;input>, &lt;button>, &lt;select>, &lt;optgroup>, &lt;option> y &lt;textarea></strong>. Además, se pueden estructurar los controles con las etiquetas <strong>&lt;fieldset> y &lt;legend></strong>. 
+            Por último, la etiqueta <strong>&lt;label></strong> permite mejorar la accesibilidad de los controles.
+            <br>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ejemplo de formulario</h5>
+                    <form>
+                        <p>Ingresa tu nombre completo: <input type="text" name="nombrecompleto"></p>
+                        <p>
+                          Deja un mensaje:<br>
+                          <textarea name="mensaje"></textarea>
+                        </p>
+                        <input type="submit" value="Enviar la información">
+                      </form>
+                </div>
+            </div>
         </p>
     </div>
 </body>
