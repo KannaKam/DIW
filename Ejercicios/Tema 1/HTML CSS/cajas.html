@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p{
+            font-size: large;
+        }
+        .div1{
+            background: rgb(140, 92, 179);
+            height: 200px;
+            width: 300px;
+        }
+        .div2{
+            background: rgb(140, 92, 179);
+            height: 200px;
+            width: 300px;
+            padding: 15%;
+            margin: 5%;
+            border: 10px solid rgb(85, 49, 114);
+            box-sizing: content-box;
+        }
+        .div3{
+            background: rgb(140, 92, 179);
+            height: 200px;
+            width: 300px;
+            padding: 15%;
+            margin: 5%;
+            border: 10px solid rgb(85, 49, 114);
+            box-sizing: padding-box;
+        }
+        .div4{
+            background: rgb(140, 92, 179);
+            height: 200px;
+            width: 300px;
+            padding: 15%;
+            margin: 5%;
+            border: 10px solid rgb(85, 49, 114);
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Modelo de cajas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="Chuleta.html"><img src="back.png"></a>
+    </nav>
+    <div class="container">
+        <h1>Modelo de cajas</h1>
+        <p>
+            Cada elemento que encontramos dentro de undocumento HTML se encuentra contenido en una caja
+            rectangular, la cual cuenta con una serie de propiedades que afectaran el cómo se muestran los elementos.
+        </p>
+        <p>
+            Al trabajar con un modelo de caja, debemos tener en cuenta que existen dos propiedades principales para definirla, 
+            <strong>height y width</strong>, que definirán el ancho y alto de nuestra caja.
+            <div class="card">
+                <div class="card-body">
+                    <div class="div1">
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p>
+            Adicionalmente a estas, tenemos el <strong>margin, padding y border</strong>, que nos brindaran mayor control al momento de organizar los elementos.
+            <div class="card">
+                <div class="card-body">
+                    <div class="div2">
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p>
+            Entonces, para saber el ancho real de nuestra caja, debemos sumar lo siguiente:
+            <br>
+            <br>
+            <em>margin-left + border-left + padding-left + width + padding-right + border-right + margin-right
+            </em>
+            <br>
+            <br>
+            De igual manera con el alto de la caja:
+            <br>
+            <br>
+            <em>
+                margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+            </em>
+        </p>
+        <p>
+            El <strong>margin</strong> y el <strong>padding</strong> son completamente transparentes y no se le puede aplicar valores de color.
+        </p>
+        <p>
+            Las propiedades <strong>margin y padding</strong> pueden aceptar de uno a cuatro valores.
+        </p>
+        <p>
+            Finalmente vermos el <strong>box-sizing</strong>, propiedad que es usada paramodificr las propiedades del modelo de cajas, dándonos más control sobre nuestra caja.
+        </p>
+        <p>
+            <strong>box-sizing</strong> acepta principalmente tres valores: <strong>content-box, padding-box y border-box</strong>. 
+            Cada uno de estos modifica el cómo se calcula el tamaño de nuestra caja.
+        </p>
+        <p>
+            <h4>content-box</h4>
+            <p>
+                Es el valor por defecto que tiene el modelo de cajas, su característica es que es aditivo, es decir, si agregamos un tamaño al margin, padding y border, éstos se sumarán
+            al width y height establecidos, agrandando el tamaño real de nuestra caja.
+            </p> 
+            <div class="card">
+                <div class="card-body">
+                    <div class="div2">
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p>
+            <h4>padding-box</h4>
+            <p>
+                Incluye el tamaño del padding dentro del tamaño establecido para la caja, es decir que el padding no sumará píxeles al tamaño de la caja, 
+                sino que el tamaño de la caja se reducirá para que al agregarle el padding la caja mantenga el tamaño establecido inicialmente, dejando fuera a border y margin.
+                <div class="card">
+                    <div class="card-body">
+                        <div class="div3">
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </p>
+        <p>
+            <h4>border-box</h4>
+            <p>
+                Al igual que el anterior disminuirá su tamaño agregando al padding y border para que el tamaño establecido de la caja se mantenga, dejando fuera al margin.
+                <div class="card">
+                    <div class="card-body">
+                        <div class="div4">
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </p>
+    </div>
+</body>
+
+</html>
