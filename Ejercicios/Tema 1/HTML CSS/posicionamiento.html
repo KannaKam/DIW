@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        p{
+            font-size: large;
+        }
+    </style>
+    <title>¿Qué es CSS?</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="Chuleta.html"><img src="back.png"></a>
+    </nav>
+    <div class="container">
+        <h1>Posicionamiento</h1>
+        <p>
+            Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML. 
+            No obstante, CSS permite al diseñador modificar la posición en la que se muestra cada caja.
+            <br>
+            <br>
+            Utilizando las propiedades que proporciona CSS para alterar la posición de las cajas es posible realizar efectos muy avanzados y diseñar estructuras de páginas que de otra forma 
+            no serían posibles.
+            <br>
+            <br>
+            El estándar de CSS define cinco modelos diferentes para posicionar una caja:
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <strong>Posicionamiento normal o static:</strong> se trata del 
+                            posicionamiento que utilizan los navegadores si no se indica lo contrario.
+                        </li>
+                        <li>
+                            <strong>Posicionamiento relativo o relative:</strong> variante del posicionamiento normal que consiste en posicionar una caja según el 
+                            posicionamiento normal y después desplazarla respecto de su posición original.
+                        </li>
+                        <li>
+                            <strong>Posicionamiento fijo o fixed:</strong> variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que su posición en la 
+                            pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario sube o baja la página en la ventana del navegador.
+                        </li>
+                        <li>
+                            <strong>Posicionamiento flotante o float:</strong> se trata del 
+                            modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible hacia la izquierda o hacia la derecha de la línea en la que se encuentran.
+                        </li>
+                        <li>
+                            <strong>Posicionamiento pegajoso o sticky:</strong> Funciona de manera similar al posicionamiento relativo, en cuanto que no elimina ningún elemento del flujo del documento. 
+                            En otras palabras, un elemento "sticky" no afecta a la posición de sus elementos adyacentes, y no hunde su elemento padre.
+                        </li>
+                        <li>
+                            <strong>Z-index:</strong> Indica el orden (en el eje Z) de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            Normalmente, cuando se posiciona una caja también es necesario desplazarla respecto de su posición original o respecto de otro origen de coordenadas.
+             CSS define cuatro propiedades llamadas <strong>top, right, bottom y left</strong> para controlar el desplazamiento de las cajas posicionadas.
+        </p>
+    </div>
+</body>
+
+</html>
