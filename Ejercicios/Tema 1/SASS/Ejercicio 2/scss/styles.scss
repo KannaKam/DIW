@@ -1,0 +1,17 @@
+$rojo: red;
+$azul: blue;
+$naranja: orange;
+$verde: green;
+
+a{
+    color:$rojo;
+    &:hover{
+        color: $azul;
+    }
+    .footer & {
+        color:$naranja;
+        &:hover{
+            color: $verde;
+        } 
+    }
+}

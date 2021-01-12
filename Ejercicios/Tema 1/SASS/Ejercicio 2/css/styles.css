@@ -1,0 +1,8 @@
+a {
+  color: red; }
+  a:hover {
+    color: blue; }
+  .footer a {
+    color: orange; }
+    .footer a:hover {
+      color: green; }
