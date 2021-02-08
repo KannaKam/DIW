@@ -1,0 +1,44 @@
+$darkgray: rgba(66, 62, 79, 1);
+$babypink: rgba(255, 201, 211, 1);
+$darkpink: rgba(255, 157, 176, 1);
+$cyan: rgba(52, 181, 225, 1);
+$babyblue: rgba(120, 203, 235, 1);
+
+ion-title{
+    background: $cyan;
+}
+
+h3{
+    font-size: x-large;
+    padding-left: 10%;
+}
+
+.logo{
+    padding-top: 0.5%;
+    width: 10%;
+}
+.menu{
+    padding-top: 0.1%;
+    height: 100%;
+    width: 10%;
+    background: $cyan;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1% 5% 3% 5%;
+    height: 100%;
+    background-color: $cyan;
+}
+  
+.menu li a {
+    display: block;
+    color: whitesmoke;
+    padding: 1% 5% 6% 5%;
+    text-decoration: none;
+}
+  
+.menu li a:hover {
+    background-color: $babyblue;
+    color: $darkgray;
+}
