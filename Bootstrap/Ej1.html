@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Ejercicio 1</title>
+    <style>
+        
+        .rojo{
+            height: 60px;
+            color:brown;
+            background-color: brown;
+        }
+        .ama{
+            height: 60px;
+            color: burlywood;
+            background-color: burlywood;
+        }
+        .azul{
+            height: 60px;
+            color: cornflowerblue;
+            background-color: cornflowerblue;
+        }
+        .gris{
+            height: 150px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border gris">
+        <div class="row align-items-start">
+            <div class="rojo col-4">a</div>
+            <div class="ama col-4">a</div>
+            <div class="azul col-4">a</div>
+        </div>
+    </div>
+    <div class="container border gris">
+        <div class="row gris align-items-center">
+            <div class="rojo col-4">a</div>
+            <div class="ama col-4">a</div>
+            <div class="azul col-4">a</div>
+        </div>
+    </div>
+    <div class="container border gris">
+        <div class="row gris align-items-end">
+            <div class="rojo col-4">a</div>
+            <div class="ama col-4">a</div>
+            <div class="azul col-4">a</div>
+        </div>
+    </div>
+    <div class="container blank">
+        <div class="row">
+            <div class="rojo col-2">a</div>
+            <div class="ama col-2">a</div>
+            <div class="azul col-2">a</div>
+        </div>
+        <div class="row">
+            <div class="offset-3 rojo col-2">a</div>
+            <div class="ama col-2">a</div>
+            <div class="azul col-2">a</div>
+        </div>
+        <div class="row">
+            <div class="offset-6 rojo col-2">a</div>
+            <div class="ama col-2">a</div>
+            <div class="azul col-2">a</div>
+        </div>
+        <div class="row">
+            <div class="offset-1 rojo col-2">a</div>
+            <div class="offset-2 ama col-2">a</div>
+            <div class="offset-2 azul col-2">a</div>
+        </div>
+    </div>
+    <div class="container border gris">
+        <div class="row gris align-items-start">
+            <div class="rojo col-2">a</div>
+            <div class="offset-3 ama col-2">a</div>
+            <div class="offset-3 azul col-2">a</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Ejemplo Botones</title>
+    <style>
+        .columna{
+            color: cadetblue;
+            background-color: cadetblue;
+            height: 100%;
+            width: 20%;
+        }
+        .row{
+            height: 200px;
+        }
+        .toolbar{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active"href="#">1</a>
+                      <a class="nav-link" href="#">2</a>
+                      <a class="nav-link" href="#">3</a>
+                      <a class="nav-link" href="#">4</a>
+                      <a class="nav-link" href="#">5</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <div class="row">
+            <div class="columna col-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-10">
+                <div class="btn-toolbar toolbar" role="toolbar">
+                    <div class="btn-group me-2" role="group">
+                      <button type="button" class="btn btn-primary">1</button>
+                      <button type="button" class="btn btn-primary">2</button>
+                      <button type="button" class="btn btn-primary">3</button>
+                      <button type="button" class="btn btn-primary">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columna col-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-5">
+                <p><button>algo</button></p>
+                <br>
+                <p><button>algo</button></p>
+            </div>
+            <div class="col-5">
+                <p><button>algo</button></p>
+                <br>
+                <p><button>algo</button></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columna col-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li role="separator" class="divider"><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-10">
+                <div class="btn-toolbar toolbar" role="toolbar">
+                    <div class="btn-group me-2" role="group">
+                      <button type="button" class="btn btn-primary">1</button>
+                      <button type="button" class="btn btn-primary">2</button>
+                      <button type="button" class="btn btn-primary">3</button>
+                      <button type="button" class="btn btn-primary">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
