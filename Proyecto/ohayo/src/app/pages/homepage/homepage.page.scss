@@ -8,6 +8,10 @@ ion-title{
     background: $cyan;
 }
 
+.container-fluid{
+    padding-left: 0% !important;
+}
+
 h3{
     font-size: x-large;
     padding-left: 10%;
@@ -23,6 +27,7 @@ h3{
     height: 100%;
     width: 230px;
     background: $cyan;
+    overflow: scroll;
 
     &__nav {
     list-style-type: none;
@@ -33,22 +38,40 @@ h3{
 
     }
 }
-  
+
+.menu::-webkit-scrollbar{
+    width: 1em;
+}
+
+.menu::-webkit-scrollbar-track{
+    background-color: $babyblue;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    background-image: url("/../assets/images/axolotl.png");
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
 .menuSection li a {
     display: block;
     color: whitesmoke;
     padding: 5% 6%;
     text-decoration: none;
+    width: 150%;
 }
   
 .menuSection li a:hover {
     background-color: $babyblue;
     color: $darkgray;
+    
 }
 
 .main{
-    padding-top: 2%;
-    font-size: 130%;
+    padding-top: 0.5%;
+    font-size: 115%;
 }
 
 span{
@@ -59,7 +82,7 @@ span{
 
 ion-icon{
     display: inline-block;
-    font-size: 130%;
+    font-size: 115%;
     text-align: center;
     vertical-align: middle;
 }
