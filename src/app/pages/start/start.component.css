@@ -1,0 +1,58 @@
+.main {
+    height: 92.6vh;
+}
+
+.left {
+    background-color: #fbf38b;
+    padding-left: 100px;
+}
+
+.subtitle {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: black;
+    border-bottom: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-family: Verdana;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: Verdana;
+    color: black;
+    font-size: 4em;
+    margin-bottom: 100px;
+}
+
+a {
+    width: 200px;
+    background-color: black;
+    font-family: Verdana;
+    margin-bottom: 100px;
+}
+
+.arrow {
+  padding-left: 30px;  
+}
+
+.footer {
+    font-family: Verdana;
+    color: black;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.right {
+    background-image: url(../../../assets/images/code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

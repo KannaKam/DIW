@@ -1,0 +1,36 @@
+    <!-- Card image -->
+    <img src="{{newsArticle.urlToImage}}" class="card-img-top" *ngIf="newsArticle.urlToImage">
+    <img src="../../../assets/images/broken.png" class="card-img-top" *ngIf="!newsArticle.urlToImage">
+
+    <!-- Card header with the author name -->
+    <div class="card-header bg-transparent border-dark" *ngIf="newsArticle.author">{{newsArticle.author}}</div>
+    <div class="card-header bg-transparent border-dark" *ngIf="!newsArticle.author">Anonymous Author</div>
+
+    <!-- Card body with informative text of the news -->
+    <div class="card-body">
+        <h5 class="card-title" *ngIf="newsArticle.title">{{newsArticle.title}}</h5>
+        <h5 class="card-title" *ngIf="!newsArticle.title">No title</h5>
+
+        <p class="card-text" *ngIf="newsArticle.description">{{newsArticle.description}}</p>
+        <p class="card-text" *ngIf="!newsArticle.description">Without description</p>
+        
+        <div class="d-flex justify-content-between">
+
+            <!-- Button to highlight a news at the top  -->
+            <a class="btn btn-primary text-light" (click)="onClick(newsArticle.title)">Save</a>
+
+            <!-- Button link to the original page  -->
+            <a href="{{newsArticle.url}}" class="btn btn-dark text-light" *ngIf="newsArticle.url">Read More</a>
+            <a href="{{newsArticle.url}}" class="btn btn-dark text-light disabled" *ngIf="!newsArticle.url">Disabled</a>
+        </div>
+    </div>
+
+    <!-- Card footer with the original page name -->
+    <div class="card-footer bg-transparent border-dark" *ngIf="newsArticle.source.name">{{newsArticle.source.name}}</div>
+    <div class="card-footer bg-transparent border-dark" *ngIf="!newsArticle.source.name">Anonymous newspaper</div>
+
+    <!-- Publication date -->
+    <p class="card-text mb-2 d-flex justify-content-end">
+        <small class="text-muted" *ngIf="newsArticle.publishedAt">{{newsArticle.publishedAt|newsDate: "Published At "}}</small>
+        <small class="text-muted" *ngIf="!newsArticle.publishedAt">Posted a few weeks ago</small>
+    </p>

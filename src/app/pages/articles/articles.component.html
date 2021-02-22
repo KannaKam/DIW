@@ -1,0 +1,24 @@
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Card loop -->
+        <div class="card mt-5 mb-5 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+            *ngFor="let article of articles; index as i;">
+
+            <!-- Card header with the images of the articles -->
+            <img src="{{article.img}}" class="card-img-top" alt="{{article.name}}">
+
+            <!-- Card body with informative text of the product -->
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-light">{{article.name}}: {{article.brand}}</h5>
+                <p class="card-text text-light" id="b">Size: {{article.size}}</p>
+
+                <!-- Button that shows and hides the price span-->
+                <button (click)="article.flag = !article.flag"
+                    class="btn btn-light text-dark">{{article.flag ? "Hide Price" : "Show Precio"}}</button>
+
+                <span class="card-text text-light ml-5 lead" *ngIf="article.flag">{{article.price}}</span>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,25 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-dark bg-dark sticky-top">
+    
+    <!-- Navbar icon and title -->
+    <a class="navbar-brand" routerLink="start">
+        <img src="../../../assets/icons/angular-icon.svg" class="logo" alt="Angular logo">
+        <span class="navbar-text lead text-light ml-3">AngularApp</span>
+    </a>
+
+    <!-- Navbar toggle icon -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar list -->
+    <div class="collapse navbar-collapse " id="navbarContent">
+        <ul class="navbar-nav">
+            <li *ngFor="let menuItem of menuItems" class="nav-item dropdown">
+                <a [routerLink]="menuItem.path" class="nav-link">
+                    {{menuItem.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

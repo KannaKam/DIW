@@ -1,0 +1,42 @@
+.navbar-brand{
+    width: 10%;
+  }
+  
+  .nav{
+    margin-left: 75%;
+  }
+  nav{
+    background-color: rgb(52, 181, 225);
+  }
+  li a{
+    color: aliceblue;
+  }
+  
+  li a:hover{
+    color: rgba(120, 203, 235, 1);
+  }
+  
+  .bg{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(120, 203, 235, 1) ;
+  }
+  
+  .cardimg{
+    height: 25%;
+    width: 25%;
+  }
+  
+  .btn-color{
+    background-color: rgb(52, 181, 225);
+  }
+  
+  .btn-color:hover{
+    background-color:rgba(120, 203, 235, 1) ;
+  }
+  .drop {
+    color: black !important;
+  }
+  .drop:hover{
+    color: rgba(120, 203, 235, 1) !important;
+  }

@@ -1,0 +1,20 @@
+
+<div class="container-fluid row ml-1 mr-1" id="newsPage">
+
+    <!-- If the array of articles is empty or null, it shows an informative text -->
+    <h3 class="ml-3 mt-5 emptyArray" *ngIf="empty">📰 Currently no news on Postman</h3>
+
+    <!-- Highlight News -->
+    <app-headboard
+    *ngIf="articleTitle"
+    [articleTitle]="articleTitle">
+    </app-headboard>
+
+    <!-- Card Loop-->
+    <app-the-news class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-5 border-dark" 
+        *ngFor="let newsArticle of newsArticles"
+        [newsArticle]="newsArticle"
+        (eventEmitter)="highlightNews($event)">
+    </app-the-news>
+
+</div>
