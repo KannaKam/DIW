@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function() {
+                $("#cubo").show(function(){
+                    alert("Shown");
+                });
+            })
+            $("#hide").click(function() {
+                $("#cubo").hide(function() {
+                    alert("Hidden");
+                });
+            })
+            $("#toggle").click(function() {
+                $("#cubo").toggle();
+            })
+            $("#flip1").click(function(){
+                $("#panel1").slideUp("slow");
+            });
+            $("#flip2").click(function(){
+                $("#panel2").slideDown("slow");
+            });
+            $("#flip3").click(function(){
+                $("#panel3").slideToggle("slow");
+            });
+            $("#fade").click(function(){
+                $("#cubo2").fadeToggle();
+            });
+            $("#fadeIn").click(function(){
+                $("#cubo3").fadeIn();
+            });
+            $("#fadeOut").click(function(){
+                $("#cubo4").fadeOut();
+            });
+            $("#flip4").click(function(){
+                $("#panel4").slideToggle(5000);
+            });
+            $("#stop").click(function(){
+                $("#panel4").stop();
+            });
+            $("#flip5").click(function(){
+                $("#panel5").slideDown(1000);
+            });
+            $("#append").click(function(){
+                $("#p1").append("Append.");
+            });
+            $("#prepend").click(function(){
+                $("#p2").prepend("Prepend.");
+            });
+            $("#before").click(function(){
+                $("#p3").before("Before.");
+            });
+            $("#after").click(function(){
+                $("#p3").after("After.");
+            });
+            $("#remove").click(function(){
+                $("#cubo5").remove();
+            });
+            $("#atr").click(function(){
+                $("#style").removeAttr("style");
+            });
+        });
+    </script>
+    <style>
+        #cubo, #cubo2, #cubo3, #cubo4, #cubo5{
+            width: 50px !important;
+            height: 50px !important;
+            background: cornflowerblue;
+        }
+        #cubo3{
+            display: none;
+        }
+        #panel1, #flip1, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel2, #panel4, #panel5{
+            display: none;
+        }
+        #panel1, #panel2, #panel3, #panel4, #panel5 {
+            padding: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="stop">Stop the animation</button>
+        <div id="flip4">Click to animate</div>
+        <div id="panel4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe optio voluptatibus dolorum necessitatibus beatae illo quis illum adipisci doloremque blanditiis porro asperiores similique eum doloribus natus, alias pariatur tempore!</div>
+    </div>
+    <div>
+        <div id="flip5">Click to animate</div>
+        <div id="panel5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe optio voluptatibus dolorum necessitatibus beatae illo quis illum adipisci doloremque blanditiis porro asperiores similique eum doloribus natus, alias pariatur tempore!</div>
+    </div>
+    <div>
+        <div id="cubo"></div>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="toggle">Toggle</button>
+    </div>
+    <div>
+        <div id="flip1">Click to slide up</div>
+        <div id="panel1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe optio voluptatibus dolorum necessitatibus beatae illo quis illum adipisci doloremque blanditiis porro asperiores similique eum doloribus natus, alias pariatur tempore!</div>
+    </div>
+    <div>
+        <div id="flip2">Click to slide down</div>
+        <div id="panel2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe optio voluptatibus dolorum necessitatibus beatae illo quis illum adipisci doloremque blanditiis porro asperiores similique eum doloribus natus, alias pariatur tempore!</div>
+    </div>
+    <div>
+        <div id="flip3">Click to slide toggle</div>
+        <div id="panel3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe optio voluptatibus dolorum necessitatibus beatae illo quis illum adipisci doloremque blanditiis porro asperiores similique eum doloribus natus, alias pariatur tempore!</div>
+    </div>
+    <div>
+        <div id="cubo2"></div>
+        <button id="fade">Fade</button>
+    </div>
+    <div>
+        <div id="cubo3"></div>
+        <button id="fadeIn">Fade in</button>
+    </div>
+    <div>
+        <div id="cubo4"></div>
+        <button id="fadeOut">Fade Out</button>
+    </div>
+    <div>
+        <button id="append">Append</button>
+        <p id="p1"></p>
+        <button id="prepend">Prepend</button>
+        <p id="p2"></p>
+        <button id="before">Before</button>
+        <button id="after">After</button>
+        <p id="p3"></p>  
+    </div>
+    <div>
+        <div id="cubo5"></div>
+        <button id="remove">Remove div</button>
+    </div>
+    <div>
+        <p id="style" style="font-size:120%;color:red">Styled.</p>
+        <button id="atr">Remove the style</button>
+    </div>
+</body>
+</html>
